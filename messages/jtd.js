@@ -150,6 +150,7 @@ module.exports = {
     _type: true,
     tag: {
       en: 'tag "{{=e.params.tag}}" must be string',
+      cs: 'štítek "{{=e.params.tag}}" musí být řetězec',
       de: 'der Tag "{{=e.params.tag}}" muss eine Zeichenkette sein',
       fi: 'tunniste "{{=e.params.tag}}" täytyy olla merkkijono',
       it: 'il tag "{{=e.params.tag}}" deve essere di tipo stringa',
@@ -163,6 +164,7 @@ module.exports = {
     },
     mapping: {
       en: 'value of tag "{{=e.params.tag}}" must be in mapping',
+      cs: 'hodnota štítku "{{=e.params.tag}}" musí být ve výčtu',
       de: 'der Wert vom Tag "{{=e.params.tag}}" muss im Mapping enthalten sein',
       fi: 'tunnisteen arvon "{{=e.params.tag}}" on oltava kartoituksessa',
       it: 'il valore del tag "{{=e.params.tag}}" deve essere nei mapping',

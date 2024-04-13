@@ -6,11 +6,12 @@ const fs = require("fs")
 const path = require("path")
 let totalMissing = 0
 
-const [, , importFile, localeFileName] = process.argv
+const importFile = process.argv[2] || 'index.js';
+const localeFileName = process.argv[3] || 'index';
 const localeFile = `${localeFileName}.js`
 const localeDefFile = `${localeFileName}.d.ts`
 
-const errorMessages = require(path.join("../messages", importFile))
+const errorMessages = require(path.join(__dirname, "../messages", importFile))
 
 const localize = getTemplate("localize.jst")
 const localizeDef = getTemplate("localize.d.jst")

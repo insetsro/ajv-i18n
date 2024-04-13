@@ -12,6 +12,8 @@ module.exports = function {{=name}}(errors) {
   for (const e of errors) {
     let out;
     switch (e.keyword) {
+        case "errorMessage":
+            continue;
       {{~ it.messages:msg }}
         case "{{= msg.keyword }}":
           {{~ msg.keywords:kwd }}
@@ -38,8 +40,8 @@ module.exports = function {{=name}}(errors) {
           {{?}}
           break;
       {{~}}
-      default:
-        {{= stripFunction(it.defaultMessage) }}
+        default:
+          {{= stripFunction(it.defaultMessage) }}
     }
     e.message = out;
   }

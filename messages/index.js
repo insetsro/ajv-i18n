@@ -643,6 +643,7 @@ module.exports = {
   },
   unevaluatedProperties: {
     en: "must NOT have unevaluated properties",
+    cs: "nesmí mít nevyhodnocené hodnoty",
     de: "darf keine unausgewerteten Attribute haben",
     fi: "ei saa sisältää arvioimattomia ominaisuuksia",
     it: "non deve avere attributi non valutati",
@@ -659,6 +660,7 @@ module.exports = {
       n: "{{var n = e.params.len;}}",
     },
     en: "{{#def.n}}must NOT have more than {{=n}} item{{#def.mPlural}}",
+    cs: "{{#def.n}}nesmí mít více než {{=n}} polož{{#def.mPlural}}",
     de: "{{#def.n}}darf nicht mehr als {{=n}} Element{{#def.mPlural}} haben",
     fi: "{{#def.n}}ei saa olla enemmän kuin {{=n}} elementti{{? n!=1 }}ä{{?}}",
     it: "{{#def.n}}non deve avere più di {{=n}} elementi{{#def.mPlural}}",
@@ -863,6 +865,7 @@ module.exports = {
     _type: false,
     tag: {
       en: 'tag "{{=e.params.tag}}" must be string',
+      cs: 'štítek "{{=e.params.tag}}" musí být řetězec',
       de: 'der Tag "{{=e.params.tag}}" muss eine Zeichenkette sein',
       fi: 'tunniste "{{=e.params.tag}}" täytyy olla merkkijono',
       it: 'il tag "{{=e.params.tag}}" deve essere di tipo stringa',
@@ -876,6 +879,7 @@ module.exports = {
     },
     mapping: {
       en: 'value of tag "{{=e.params.tag}}" must be in oneOf',
+      cs: 'hodnota štítku "{{=e.params.tag}}" musí vyhovět výčtu',
       de: 'der Wert vom Tag "{{=e.params.tag}}" muss im oneOf enthalten sein',
       fi: 'tunnisteen "{{=e.params.tag}}" arvon muoto pitää olla oneOf',
       it: 'il valore del tag "{{=e.params.tag}}" deve essere nei oneOf',
